@@ -35,6 +35,12 @@
   </div>
 </nav>
 
+<div style="min-height: 100vh;">
+  <slot></slot>
+</div>
 
-  
-<slot></slot>
+<footer class="p-3 bg-dark">
+  <div class="text-white">
+    acab2022 &copy;
+  </div>
+</footer>
