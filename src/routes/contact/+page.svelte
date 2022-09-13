@@ -2,6 +2,14 @@
     import Card from "./card.svelte";
 </script>
 
+<svelte:head>
+    <title>
+        Contact
+    </title>
+    <meta name="description" content="Acab kontakt +48 555 222 111. Acab@gmail.com">
+</svelte:head>
+
+
 <div class="container">
   <h1>contact</h1>
   <!-- Button trigger modal -->
