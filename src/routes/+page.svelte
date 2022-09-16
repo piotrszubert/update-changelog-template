@@ -8,8 +8,8 @@
 <div class="container col-xxl-8 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-lg-6">
-        <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg" class="d-block mx-lg-auto img-fluid rounded" 
-             alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        <img src="/images/hero.jpeg" class="d-block mx-lg-auto img-fluid rounded" 
+             alt="hero" width="700" height="500" loading="lazy">
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
