@@ -4,12 +4,12 @@
 
 <Nav/>
 
-<main style="min-height: 100vh;">
+<main class="container-fluid" style="min-height: 100vh;">
   <slot></slot>
 </main>
 
-<footer class="p-3 bg-dark">
-  <div class="text-white">
+<footer class="p-3 border-top">
+  <div>
     acab2022 &copy;
   </div>
 </footer>

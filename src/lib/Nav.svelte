@@ -8,7 +8,7 @@
 }
 </style>
 
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Offcanvas navbar large">
+<nav class="navbar navbar-expand-sm border-bottom" aria-label="Offcanvas navbar large">
     <div class="container-fluid">
         <a class="navbar-brand" href="/">acab</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
@@ -22,13 +22,13 @@
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                        <a class="nav-link" class:active={$page.url.pathname === '/'} aria-current="page" href="/">Home</a>
+                        <a class="nav-link" rel="prefetch" class:active={$page.url.pathname === '/'} aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" class:active={$page.url.pathname === '/contact'} href="/contact">Kontakt</a>
+                        <a class="nav-link" rel="prefetch" class:active={$page.url.pathname === '/about'} href="/about">O nas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" class:active={$page.url.pathname === '/about'} href="/about">O nas</a>
+                        <a class="nav-link" rel="prefetch" class:active={$page.url.pathname === '/contact'} href="/contact">Kontakt</a>
                     </li>
                 </ul>
             </div>
