@@ -84,7 +84,7 @@ img {
 <section class="py-5" style="background-color: #fafafa;">
   <div class="container">
     <h2 class="mb-5">Usługi</h2>
-    <div class="row d-block" data-masonry={'{"percentPosition": true }'}>
+    <div class="row align-items-center" data-masonry={'{"percentPosition": true }'}>
       <div class="col-sm-6 col-lg-4 mb-4">
         <div class="card text-bg-primary text-center p-3">
           <p class="h5">Sprawdź aktualnie obowiązujący cennik</p>
