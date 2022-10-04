@@ -23,8 +23,8 @@ img {
   filter: sepia(30%) opacity(80%) saturate(80%) hue-rotate(190deg);
 }
 
-.card {
-  border-radius: 0;
+.card * {
+  /* border-radius: 0; */
 }
 
 </style>
@@ -124,7 +124,7 @@ img {
 
     <div class="col-sm-6 col-lg-4 mb-4">
       <div class="card">
-        <img src="/images/masonry2.jpg" alt="" class="" style="object-fit: cover; height:200px">
+        <img src="/images/masonry3.jpg" alt="" class="" style="object-fit: cover; height:200px">
 
         <div class="card-body">
           <h5 class="card-title">Fotele i krzesła</h5>
