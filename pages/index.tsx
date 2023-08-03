@@ -15,13 +15,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
-      <main className={`${sourceSans3.className}`}>
-        <h1>
-          Stay updated
-        </h1>
-        <h2>
-          New updates and improvements to Update.
-        </h2>
+      <main className={`${sourceSans3.className} ${styles.main}`}>
+        <div>  
+          <h1>
+            Stay updated
+          </h1>
+          <h2>
+            New updates and improvements to Update.
+          </h2>
+        </div>
+        <div>
+          changelog here
+        </div>
       </main>
     </>
   )
