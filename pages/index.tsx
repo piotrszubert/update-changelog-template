@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Nunito } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Header from '@/components/header'
+import SubscribeForm from '@/components/subscribeForm'
 
 const nunito = Nunito({ subsets: ['latin'] })
 
@@ -17,12 +18,7 @@ export default function Home() {
       <Header/>
       <main className={`${nunito.className} ${styles.main}`}>
         <div>  
-          <h1>
-            Stay updated
-          </h1>
-          <h2>
-            New updates and improvements to Update.
-          </h2>
+          <SubscribeForm/>
         </div>
         <div>
           changelog here
