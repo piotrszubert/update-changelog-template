@@ -21,6 +21,9 @@
 
 html,
 body {
+  /* for testing */
+  min-height: 100vh;
+
   max-width: 100vw;
   overflow-x: hidden;
 }
@@ -48,4 +51,12 @@ h2 {
   all: unset;
   font-size: 1.25rem;
   display: block;
+}
+
+.w-3 {
+  width: 1rem;
+}
+
+.h-3 {
+  height: 1rem;
 }

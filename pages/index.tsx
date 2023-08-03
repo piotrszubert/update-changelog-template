@@ -1,9 +1,11 @@
 import Head from 'next/head'
-import { Source_Sans_3 } from 'next/font/google'
+import { Nunito } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Header from '@/components/header'
+import SubscribeForm from '@/components/subscribeForm'
+import Card from '@/components/card'
 
-const sourceSans3 = Source_Sans_3({ subsets: ['latin'] })
+const nunito = Nunito({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -15,17 +17,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
-      <main className={`${sourceSans3.className} ${styles.main}`}>
+      <main className={`${nunito.className} ${styles.main}`}>
         <div>  
-          <h1>
-            Stay updated
-          </h1>
-          <h2>
-            New updates and improvements to Update.
-          </h2>
+          <SubscribeForm/>
         </div>
-        <div>
+        <div style={{display: 'flex', flexDirection: 'column', gap: '1rem'}}>
           changelog here
+          <Card/>
+          <Card/>
+          <Card/>
         </div>
       </main>
     </>
