@@ -4,6 +4,12 @@
   --border-width: 2px;
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 214, 219, 220;
+  --card-bg-rgb-1: 254, 237, 198;
+  --card-bg-rgb-2: 212, 254, 198;
+  --card-bg-rgb-3: 198, 254, 237;
+  --card-bg-rgb-4: 198, 227, 254;
+  --card-bg-rgb-5: 223, 198, 254;
+  --card-bg-rgb-6: 254, 198, 198;
 }
 
 * {
