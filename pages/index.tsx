@@ -3,6 +3,7 @@ import { Nunito } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Header from '@/components/header'
 import SubscribeForm from '@/components/subscribeForm'
+import Card from '@/components/card'
 
 const nunito = Nunito({ subsets: ['latin'] })
 
@@ -20,8 +21,11 @@ export default function Home() {
         <div>  
           <SubscribeForm/>
         </div>
-        <div>
+        <div style={{display: 'flex', flexDirection: 'column', gap: '1rem'}}>
           changelog here
+          <Card/>
+          <Card/>
+          <Card/>
         </div>
       </main>
     </>
