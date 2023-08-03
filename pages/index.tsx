@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { Source_Sans_3 } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import Header from '@/components/header'
 
 const sourceSans3 = Source_Sans_3({ subsets: ['latin'] })
 
@@ -13,8 +14,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Header/>
       <main className={`${sourceSans3.className}`}>
-        main
+        <h1>
+          Stay updated
+        </h1>
+        <h2>
+          New updates and improvements to Update.
+        </h2>
       </main>
     </>
   )

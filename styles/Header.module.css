@@ -1,0 +1,12 @@
+.header {
+    margin: 1rem 0;
+    padding: 1.5rem 1rem;
+    background-color: rgb(var(--card-bg-rgb-1));
+    border: var(--border-width) solid black;
+    border-radius: var(--border-radius);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
