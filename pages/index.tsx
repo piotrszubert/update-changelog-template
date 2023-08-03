@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import { Source_Sans_3 } from 'next/font/google'
+import { Nunito } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Header from '@/components/header'
 
-const sourceSans3 = Source_Sans_3({ subsets: ['latin'] })
+const nunito = Nunito({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
-      <main className={`${sourceSans3.className} ${styles.main}`}>
+      <main className={`${nunito.className} ${styles.main}`}>
         <div>  
           <h1>
             Stay updated
