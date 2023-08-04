@@ -22,7 +22,6 @@ export default function Home() {
           <SubscribeForm/>
         </div>
         <div style={{display: 'flex', flexDirection: 'column', gap: '1rem'}}>
-          changelog here
           <Card/>
           <Card/>
           <Card/>
