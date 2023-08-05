@@ -16,13 +16,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header/>
+      {/* <Header/> */}
       <main className={`${nunito.className} ${styles.main}`}>
         <div>  
           <SubscribeForm/>
         </div>
-        <div style={{display: 'flex', flexDirection: 'column', gap: '1rem'}}>
-          changelog here
+        <div style={{display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '2rem'}}>
           <Card/>
           <Card/>
           <Card/>

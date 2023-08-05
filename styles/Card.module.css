@@ -1,7 +1,41 @@
 .card {
     border: var(--border-width) solid;
     border-radius: var(--border-radius);
-    background-color: rgb(var(--card-bg-rgb-2));
+    background-color: rgb(var(--card-bg-rgb-5));
     box-shadow: 6px 6px rgb(0,0,0);
     min-height: 6rem;
+    padding: 1.5rem 1rem;
+}
+
+.cardTitle {
+    font-weight: 800;
+    font-size: 1.25rem;
+}
+
+.cardBody {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.cardBody ul {
+    padding-left: 1rem;
+}
+
+.cardFooter {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.cardFooter a {
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+}
+
+.cardFooter a:hover {
+    text-decoration: underline;
 }
