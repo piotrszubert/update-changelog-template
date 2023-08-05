@@ -10,6 +10,7 @@
 
 .form {
     display: flex;
+    flex-wrap: wrap;
     gap: .5rem;
     padding: .5rem;
     border: var(--border-width) solid;
@@ -20,7 +21,7 @@
 .formInput {
     all: unset;
     flex-grow: 2;
-    padding: 0 .5rem;
+    padding: .75rem 1rem;
 }
 
 .formInput:focus {
