@@ -24,9 +24,8 @@
 }
 
 .formInput:focus {
-    outline: 2px solid;
+    outline: 2px solid #906090;
     border-radius: 4px;
-
 }
 
 .formButton {
@@ -51,6 +50,10 @@
     color: rgb(30,30,30);
 }
 
+.formButton:focus {
+    outline: 2px solid #906090;
+    border-radius: 4px;
+}
 
 @media (max-width: 1024px) {
     .wrapper {
