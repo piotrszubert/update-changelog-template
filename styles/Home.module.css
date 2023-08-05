@@ -1,10 +1,11 @@
 .main {
   padding: 0 1rem;
   display: grid;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   gap: 1rem;
   grid-template-columns: 1fr 1fr;
+  min-height: 20rem;
 }
 
 
