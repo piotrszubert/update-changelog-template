@@ -10,6 +10,7 @@
 
 .form {
     display: flex;
+    flex-wrap: wrap;
     gap: .5rem;
     padding: .5rem;
     border: var(--border-width) solid;
@@ -20,13 +21,12 @@
 .formInput {
     all: unset;
     flex-grow: 2;
-    padding: 0 .5rem;
+    padding: .75rem 1rem;
 }
 
 .formInput:focus {
-    outline: 2px solid;
+    outline: 2px solid #906090;
     border-radius: 4px;
-
 }
 
 .formButton {
@@ -51,6 +51,10 @@
     color: rgb(30,30,30);
 }
 
+.formButton:focus {
+    outline: 2px solid #906090;
+    border-radius: 4px;
+}
 
 @media (max-width: 1024px) {
     .wrapper {
