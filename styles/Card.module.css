@@ -9,7 +9,8 @@
 
 .cardTitle {
     font-weight: 800;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .cardBody {
@@ -20,8 +21,16 @@
     gap: .5rem;
 }
 
+.cardBody h2 {
+    font-weight: 600;
+}
+
 .cardBody ul {
     padding-left: 1rem;
+}
+
+.cardBody ul li:not(:last-child) {
+    margin-bottom: 1rem;
 }
 
 .cardFooter {
@@ -31,11 +40,14 @@
 
 .cardFooter a {
     font-weight: bold;
+    font-size: 1.5rem;
     display: inline-flex;
     align-items: center;
     gap: .35rem;
+    transition: gap .1s linear;
 }
 
 .cardFooter a:hover {
     text-decoration: underline;
+    gap: .65rem;
 }
