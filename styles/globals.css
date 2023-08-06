@@ -11,6 +11,8 @@
   --card-bg-rgb-4: 198, 227, 254;
   --card-bg-rgb-5: 223, 198, 254;
   --card-bg-rgb-6: 254, 198, 198;
+  --box-shadow: 6px 6px rgb(0,0,0);
+  --focus-outline: 2px solid #906090;
 }
 
 * {
