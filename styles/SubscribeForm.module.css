@@ -32,22 +32,21 @@
 .formButton {
     all: unset;
     font-weight: bold;
-    all: unset;
     display: inline-flex;
     align-items: center;
     flex-grow: 1;
     gap: .5rem;
     font-size: 1rem;
-    background-color: rgb(30,30,30);
-    color: rgb(255,255,255);
+    background-color: var(--black-rgb);
+    color: var(--white-rgb);
     padding: .75rem 1rem;
     cursor: pointer;
     border-radius: 4px;
 }
 
 .formButton:hover {
-    background-color: rgb(var(--card-bg-rgb-5));
-    color: rgb(30,30,30);
+    background-color: var(--card-bg-rgb-5);
+    color: var(--black-rgb)
 }
 
 .formButton:focus {
