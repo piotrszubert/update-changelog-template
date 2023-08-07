@@ -1,10 +1,14 @@
 import styles from '@/styles/Card.module.css'
 
-export default function Card() {
+interface cardProps {
+    title?: string,
+}
+
+export default function Card({title}: cardProps) {
     return (
         <div className={styles.card}>
             <p className={styles.cardTitle}>
-                Version 1.0.0
+                {title}
             </p>
             <div className={styles.cardBody}>
                 <h2>New Features:</h2>
