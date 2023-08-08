@@ -4,6 +4,7 @@ import styles from '@/styles/Home.module.css'
 import Header from '@/components/header'
 import SubscribeForm from '@/components/subscribeForm'
 import Card from '@/components/card'
+import CardList from '@/components/cardList'
 
 const nunito = Nunito({ subsets: ['latin'] })
 
@@ -21,11 +22,7 @@ export default function Home() {
         <div>  
           <SubscribeForm/>
         </div>
-        <div style={{display: 'flex', flexDirection: 'column', gap: '1rem', padding: '2rem 0'}}>
-          <Card/>
-          <Card/>
-          <Card/>
-        </div>
+        <CardList/>
       </main>
     </>
   )
