@@ -12,11 +12,16 @@ interface CardProps {
     improvements?: Feature[];
     bugFixes?: Feature[];
     otherUpdates?: Feature[];
+    bgColor?: string; 
 }
 
-export default function Card({title, releaseDate, newFeatures, improvements, bugFixes, otherUpdates}: CardProps) {
+export default function Card({title, releaseDate, newFeatures, improvements, bugFixes, otherUpdates, bgColor}: CardProps) {
+    const cardBackground = {
+        background: bgColor, // Set background color using bgColor prop
+    };
+    
     return (
-        <div className={styles.card}>
+        <div className={styles.card} style={cardBackground}>
             <p className={styles.cardTitle}>
                 {title}
                 <br />

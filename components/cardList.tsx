@@ -5,6 +5,7 @@ const data = [
 	{
 		title: "Version 1.0.0",
 		releaseDate: "15-06-2022",
+		bgColor: "var(--card-bg-rgb-1)",
 		newFeatures: [
 			// New features for version 1
 			{
@@ -66,6 +67,7 @@ const data = [
 	{
 		title: "Version 2.0.0",
 		releaseDate: "01-09-2022",
+		bgColor: "var(--card-bg-rgb-2)",
 		newFeatures: [
 			// New features for version 2
 			{
@@ -127,6 +129,7 @@ const data = [
 	{
 		title: "Version 3.0.0",
 		releaseDate: "18-12-2022",
+		bgColor: "var(--card-bg-rgb-3)",
 		newFeatures: [
 			// New features for version 3
 			{
@@ -203,6 +206,7 @@ export default function CardList() {
 						improvements={item.improvements}
 						bugFixes={item.bugFixes}
 						otherUpdates={item.otherUpdates}
+						bgColor={item.bgColor}
 					/>
 				</div>
 			))}
