@@ -5,6 +5,7 @@ const data = [
 	{
 		title: "Version 1.0.0",
 		releaseDate: "15-06-2022",
+		bgColor: "var(--card-bg-rgb-1)",
 		newFeatures: [
 			// New features for version 1
 			{
@@ -66,6 +67,7 @@ const data = [
 	{
 		title: "Version 2.0.0",
 		releaseDate: "01-09-2022",
+		bgColor: "var(--card-bg-rgb-2)",
 		newFeatures: [
 			// New features for version 2
 			{
@@ -127,6 +129,7 @@ const data = [
 	{
 		title: "Version 3.0.0",
 		releaseDate: "18-12-2022",
+		bgColor: "var(--card-bg-rgb-3)",
 		newFeatures: [
 			// New features for version 3
 			{
@@ -187,16 +190,23 @@ const data = [
 	// Add more versions here if needed
 ];
 
+import styles from '@/styles/CardList.module.css'
 
 export default function CardList() {
 	return (
-		<div>
+		<div className={styles.cardListWrapper}>
 			{data.map((item, index) => (
 				<div
 					key={index}
 				>
 					<Card
 						title={item.title}
+						releaseDate={item.releaseDate}
+						newFeatures={item.newFeatures}
+						improvements={item.improvements}
+						bugFixes={item.bugFixes}
+						otherUpdates={item.otherUpdates}
+						bgColor={item.bgColor}
 					/>
 				</div>
 			))}
