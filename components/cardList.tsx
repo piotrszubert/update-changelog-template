@@ -198,6 +198,11 @@ export default function CardList() {
 				>
 					<Card
 						title={item.title}
+						releaseDate={item.releaseDate}
+						newFeatures={item.newFeatures}
+						improvements={item.improvements}
+						bugFixes={item.bugFixes}
+						otherUpdates={item.otherUpdates}
 					/>
 				</div>
 			))}

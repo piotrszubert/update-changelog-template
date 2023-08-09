@@ -1,38 +1,53 @@
 import styles from '@/styles/Card.module.css'
 
-interface cardProps {
-    title?: string,
+interface Feature {
+    short: string;
+    long: string;
+}
+  
+interface CardProps {
+    title?: string;
+    releaseDate?: string;
+    newFeatures?: Feature[];
+    improvements?: Feature[];
+    bugFixes?: Feature[];
+    otherUpdates?: Feature[];
 }
 
-export default function Card({title}: cardProps) {
+export default function Card({title, releaseDate, newFeatures, improvements, bugFixes, otherUpdates}: CardProps) {
     return (
         <div className={styles.card}>
             <p className={styles.cardTitle}>
                 {title}
+                <br />
+                <span className={styles.cardReleaseDate}>
+                    {releaseDate}
+                </span>
             </p>
             <div className={styles.cardBody}>
                 <h2>New Features:</h2>
                 <ul>
-                    <li>Introducing a powerful search functionality: We&apos;ve added an advanced search feature that allows users to easily find specific items within the app. Now you can quickly locate files, contacts, and messages with just a few keystrokes.</li>
-                    <li>Enhanced collaboration tools: Collaborate seamlessly with your team through real-time document editing and commenting. Experience a new level of productivity with improved version control and simultaneous editing capabilities.</li>
-                    <li>Dark mode option: We&apos;ve heard your requests, and now you can enjoy a sleek and easy-on-the-eyes dark mode. Save battery life and work comfortably in low-light environments.</li>
+                    {newFeatures?.map((feature, index) => (
+                        <li key={index}>{feature.short}</li>
+                    ))}
                 </ul>
                 <h2>Improvements:</h2>
                 <ul>
-                    <li>Revamped user interface: Our UI has undergone a complete makeover to enhance user experience. Enjoy a cleaner, more intuitive design that boosts productivity and reduces clutter.</li>
-                    <li>Performance optimization: We&apos;ve fine-tuned the app to run faster and smoother, minimizing lags and improving overall responsiveness.</li>
-                    <li>Improved security measures: Your data security is our top priority. We&apos;ve implemented stronger encryption and multi-factor authentication to keep your information safe and secure.</li>
+                    {improvements?.map((feature, index) => (
+                        <li key={index}>{feature.short}</li>
+                    ))}
                 </ul>
                 <h2>Bug Fixes:</h2>
                 <ul>
-                    <li>Addressed issue with file synchronization: Users reported occasional sync errors with cloud storage. We&apos;ve fixed this problem, and file synchronization now works flawlessly.</li>
-                    <li>Resolved crashing on startup: Some devices experienced crashes upon launching the app. This issue has been resolved, ensuring a stable and reliable user experience.</li>
-                    <li>Fixed data loss when offline: In rare cases, data saved offline was not properly synchronized upon reconnection. Rest assured, your data is now synced accurately, even if you were offline.</li>
+                    {bugFixes?.map((feature, index) => (
+                        <li key={index}>{feature.short}</li>
+                    ))}
                 </ul>
                 <h2>Other Updates:</h2>
                 <ul>
-                    <li>Improved localization: The app is now available in several new languages, making it more accessible to a global audience.</li>
-                    <li>Streamlined onboarding process: New users will find it easier to set up their accounts and start using the app thanks to an improved onboarding flow.</li>
+                    {otherUpdates?.map((feature, index) => (
+                        <li key={index}>{feature.short}</li>
+                    ))}
                 </ul>
             </div>
 

@@ -13,6 +13,11 @@
     margin-bottom: 2rem;
 }
 
+.cardReleaseDate {
+    font-size: .75rem;
+    font-weight: normal;
+}
+
 .cardBody {
     padding-bottom: 1rem;
     border-bottom: 1px solid;
