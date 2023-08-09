@@ -187,10 +187,11 @@ const data = [
 	// Add more versions here if needed
 ];
 
+import styles from '@/styles/CardList.module.css'
 
 export default function CardList() {
 	return (
-		<div>
+		<div className={styles.cardListWrapper}>
 			{data.map((item, index) => (
 				<div
 					key={index}
