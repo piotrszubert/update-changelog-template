@@ -17,7 +17,7 @@ interface CardProps {
 
 export default function Card({title, releaseDate, newFeatures, improvements, bugFixes, otherUpdates, bgColor}: CardProps) {
     const cardBackground = {
-        background: bgColor, // Set background color using bgColor prop
+        background: bgColor,
     };
     
     return (

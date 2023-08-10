@@ -1,0 +1,12 @@
+.main {
+    max-width: 55rem;
+    margin: 0 auto;
+}
+
+.wrapper {
+    border: var(--border-width) solid;
+    border-radius: var(--border-radius);
+    min-height: 80vh; 
+    box-shadow: var(--box-shadow);
+    margin: 3rem 0;
+}
