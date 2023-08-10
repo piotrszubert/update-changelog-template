@@ -33,16 +33,40 @@ export default function VersionPage() {
 					</button>
 				</div>
 				<div className={styles.wrapper} style={cardBg}>
-					{router.query.slug}
-					{version?.title}
-					{version?.releaseDate}
-					{version?.improvements.map((item,index) => (
-						<div
-							key={index}
-						>
-							{item.long}
-						</div>
-					))}
+					<div className={styles.contentHeading}>
+						<h1>
+							{version?.title}
+						</h1>
+						<span>
+							{version?.releaseDate}
+						</span>
+					</div>
+					<div className={styles.featuresContent}>
+						<h2>New Features:</h2>
+						<ul>
+							{version?.newFeatures?.map((feature, index) => (
+								<li key={index}>{feature.long}</li>
+							))}
+						</ul>
+						<h2>Improvements:</h2>
+						<ul>
+							{version?.improvements?.map((feature, index) => (
+								<li key={index}>{feature.long}</li>
+							))}
+						</ul>
+						<h2>Bug Fixes:</h2>
+						<ul>
+							{version?.bugFixes?.map((feature, index) => (
+								<li key={index}>{feature.long}</li>
+							))}
+						</ul>
+						<h2>Other Updates:</h2>
+						<ul>
+							{version?.otherUpdates?.map((feature, index) => (
+								<li key={index}>{feature.long}</li>
+							))}
+						</ul>
+					</div>
 				</div>
 			</main>
 		</>
