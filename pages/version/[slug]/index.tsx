@@ -8,7 +8,9 @@ const nunito = Nunito({ subsets: ['latin'] })
 
 export default function VersionPage() {
 	const router = useRouter();
-
+	const handleBack = () => {
+		router.back();
+	}
 	return (
 		<>
 			<Head>
@@ -18,7 +20,10 @@ export default function VersionPage() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main className={`${nunito.className} ${styles.main}`}>
-				<div>
+				<div className={styles.ctaBack}>
+					<button className={styles.backButton} onClick={handleBack}>
+						Back
+					</button>
 				</div>
 				<div className={styles.wrapper}>
 					{router.query.slug}
