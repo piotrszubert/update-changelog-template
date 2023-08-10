@@ -18,6 +18,7 @@ export default function CardList() {
 						bugFixes={item.bugFixes}
 						otherUpdates={item.otherUpdates}
 						bgColor={item.bgColor}
+						id={item.id}
 					/>
 				</div>
 			))}
