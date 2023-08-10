@@ -1,6 +1,7 @@
 const data = [
 	// Version 1
 	{
+        id: 'ver.1.0.0',
 		title: "Version 1.0.0",
 		releaseDate: "15-06-2022",
 		bgColor: "var(--card-bg-rgb-1)",
@@ -63,6 +64,7 @@ const data = [
 	},
 	// Version 2
 	{
+        id: 'ver.2.0.0',
 		title: "Version 2.0.0",
 		releaseDate: "01-09-2022",
 		bgColor: "var(--card-bg-rgb-2)",
@@ -125,6 +127,7 @@ const data = [
 	},
 	// Version 3
 	{
+        id: 'ver.3.0.0',
 		title: "Version 3.0.0",
 		releaseDate: "18-12-2022",
 		bgColor: "var(--card-bg-rgb-3)",
