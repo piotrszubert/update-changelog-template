@@ -8,12 +8,7 @@ const nunito = Nunito({ subsets: ['latin'] })
 
 export default function VersionPage() {
 	const router = useRouter();
-	const handleBack = () => {
-		router.back();
-	}
-
 	const version = data.find((version) => version.id === router.query.id);
-
 	const cardBg = {
 		backgroundColor: version?.bgColor
 	}
@@ -28,7 +23,7 @@ export default function VersionPage() {
 			</Head>
 			<main className={`${nunito.className} ${styles.main}`}>
 				<div className={styles.ctaBack}>
-					<button className={styles.backButton} onClick={handleBack}>
+					<button className={styles.backButton} onClick={() => router.back()}>
 						Back
 					</button>
 				</div>
