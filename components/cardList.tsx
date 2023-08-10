@@ -1,12 +1,14 @@
 import Card from "./card";
 import data from "@/data/versionsData";
-
 import styles from '@/styles/CardList.module.css'
+
+let values = [...data];
+const descendingVersions = values.reverse(); 
 
 export default function CardList() {
 	return (
 		<div className={styles.cardListWrapper}>
-			{data.map((item, index) => (
+			{descendingVersions.map((item, index) => (
 				<div
 					key={index}
 				>
