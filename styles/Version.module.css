@@ -45,6 +45,10 @@
     padding: 2rem 0;
 }
 
+.contentHeading h1 {
+    font-weight: 800;
+}
+
 .featuresContent {
     display: flex; 
     flex-direction: column;
