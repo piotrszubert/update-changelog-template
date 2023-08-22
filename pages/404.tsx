@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Nunito } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import styles from '@/styles/Custom404.module.css'
+import Link from "next/link";
 
 const nunito = Nunito({ subsets: ['latin'] })
 export default function Custom404() {
@@ -13,8 +14,19 @@ export default function Custom404() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className={`${nunito.className} ${styles.main}`}>
-                <div> 
-                    404 
+                <div>
+                    <h1 className={styles.errorCode}> 
+                        404 
+                    </h1>
+                    <h2 className={styles.errorStatus}>Page not found</h2>
+                    <div className={styles.backLinkWrapper}>
+                        <Link className={styles.backLink} href="/">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-3 h-3">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                            </svg>
+                            Back
+                        </Link>
+                    </div>
                 </div>
             </main>
         </>
